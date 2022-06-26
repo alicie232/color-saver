@@ -14,7 +14,11 @@ function ColorCard() {
       {colorCards.map(({ id, colorCode }) => {
         return (
           <div className="colorCard" style={{ backgroundColor: colorCode }}>
-            <button className="colorCard_change" type="button">
+            <button
+              className="colorCard_change"
+              type="button"
+              onClick={() => navigator.clipboard.writeText(colorCode)}
+            >
               {colorCode}
             </button>
           </div>
