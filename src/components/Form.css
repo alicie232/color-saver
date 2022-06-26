@@ -1,0 +1,15 @@
+.colorPicker {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  margin: 20px;
+  padding: 25px;
+  gap: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+input {
+  width: 100px;
+  border-radius: 5px;
+}

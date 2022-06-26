@@ -1,0 +1,33 @@
+.colorCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+.colorCard_change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: lightgray;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:active {
+  background-color: green;
+}
