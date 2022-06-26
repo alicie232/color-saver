@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "./components/ColorCard.css";
 import ColorCard from "./components/ColorCard";
 
 function App() {

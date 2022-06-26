@@ -1,5 +1,6 @@
 import React from "react";
 import { nanoid } from "nanoid";
+import "./ColorCard.css";
 
 function ColorCard() {
   const colorCards = [
@@ -8,14 +9,13 @@ function ColorCard() {
     { id: nanoid(), colorCode: "#82c91e" },
     { id: nanoid(), colorCode: "#12b88g" },
   ];
-
   return (
     <>
-      {colorCards.map((colorCard) => {
+      {colorCards.map(({ id, colorCode }) => {
         return (
-          <div className="colorCard" key={colorCard.id}>
+          <div className="colorCard" style={{ backgroundColor: colorCode }}>
             <button className="colorCard_change" type="button">
-              {colorCard.colorCode}
+              {colorCode}
             </button>
           </div>
         );
